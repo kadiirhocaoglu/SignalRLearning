@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearningSignalR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e8b24ef42b4318304246d3201265af70ed489f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e67e5b42fc3355d09d7599d8c62d6491f4472d80")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearningSignalR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearningSignalR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

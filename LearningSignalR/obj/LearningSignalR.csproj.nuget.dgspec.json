@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ethan\\Desktop\\SignalRProject\\LearningSignalR\\LearningSignalR\\LearningSignalR.csproj": {}
+    "C:\\Users\\ethan\\Desktop\\SignalRLearning\\LearningSignalR\\LearningSignalR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ethan\\Desktop\\SignalRProject\\LearningSignalR\\LearningSignalR\\LearningSignalR.csproj": {
+    "C:\\Users\\ethan\\Desktop\\SignalRLearning\\LearningSignalR\\LearningSignalR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ethan\\Desktop\\SignalRProject\\LearningSignalR\\LearningSignalR\\LearningSignalR.csproj",
+        "projectUniqueName": "C:\\Users\\ethan\\Desktop\\SignalRLearning\\LearningSignalR\\LearningSignalR.csproj",
         "projectName": "LearningSignalR",
-        "projectPath": "C:\\Users\\ethan\\Desktop\\SignalRProject\\LearningSignalR\\LearningSignalR\\LearningSignalR.csproj",
+        "projectPath": "C:\\Users\\ethan\\Desktop\\SignalRLearning\\LearningSignalR\\LearningSignalR.csproj",
         "packagesPath": "C:\\Users\\ethan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ethan\\Desktop\\SignalRProject\\LearningSignalR\\LearningSignalR\\obj\\",
+        "outputPath": "C:\\Users\\ethan\\Desktop\\SignalRLearning\\LearningSignalR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ethan\\AppData\\Roaming\\NuGet\\NuGet.Config",

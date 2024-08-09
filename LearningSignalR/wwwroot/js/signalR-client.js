@@ -19,6 +19,7 @@
         setTimeout(()=>start(), 5000)
 
     }
+    //Client
 
     var client = $("#slm");
     connection.on(reveiveConnectedClientCount, (message) => {

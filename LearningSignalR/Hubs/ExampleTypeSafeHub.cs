@@ -17,6 +17,10 @@ namespace LearningSignalR.Hubs
         {
             await Clients.Others.ReceiveMessageOtherClient(message);
         }
+        public async Task BroadcastMessageByIdClient(string connectionId, string message)
+        {
+            await Clients.Client(connectionId).ReceiveMessageByIdClient(message);
+        }
 
         public override async Task OnConnectedAsync()
         {

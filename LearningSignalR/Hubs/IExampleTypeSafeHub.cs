@@ -1,10 +1,10 @@
-﻿namespace LearningSignalR.Hubs
+﻿namespace LearningSignalR.Hubs;
+
+public interface IExampleTypeSafeHub
 {
-    public interface IExampleTypeSafeHub
-    {
-        Task ReveiveMessageAllClient(string message);
-        Task ReveiveConnectedClientCount(int connectedClient);
-        Task ReceiveMessageCallerClient(string message);
-        Task ReceiveMessageOtherClient(string message);
-    }
+    Task ReveiveMessageAllClient(string message);
+    Task ReveiveConnectedClientCount(int connectedClient);
+    Task ReceiveMessageCallerClient(string message);
+    Task ReceiveMessageOtherClient(string message);
+    Task ReceiveMessageByIdClient(string message);
 }

@@ -7,10 +7,11 @@
     const reveiveMessageCallerClientHubMethodCall = "ReceiveMessageCallerClient";
     const boardcastMessageOtherClient = "BoardcastMessageOtherClient";
     const receiveMessageOtherClientHubMethodCall = "ReceiveMessageOtherClient";
-
+    const broadcastMessageByIdClient = "BroadcastMessageByIdClient";
+    const receiveMessageByIdClient = "ReceiveMessageByIdClient";
     const connection = new signalR.HubConnectionBuilder().withUrl("/exampletypesafehub").configureLogging(signalR.LogLevel.Information).build();
     function start() {
-        connection.start().then(() => console.log("Bağlantı kuruldu"));
+        connection.start().then(() => console.log("Bağlantı kuruldu ", connection.connectionId));
     }
     try {
         start();
@@ -19,14 +20,12 @@
         setTimeout(()=>start(), 5000)
 
     }
-    //Client
 
     var client = $("#slm");
     connection.on(reveiveConnectedClientCount, (message) => {
         console.log(message);
         client.text(message);
     })
-
 
     connection.on(reveiveMessageAllClientMethodCall, (count) => {
         console.log("connected client count", count);
@@ -37,7 +36,9 @@
     connection.on(receiveMessageOtherClientHubMethodCall, (message) => {
         console.log(message);
     })
-
+    connection.on(receiveMessageByIdClient, (message) => {
+        console.log(message);
+    })
     $("#btn-send-message-all-client").click(function () {
         const message = "Herkese giden mesaj";
         connection.invoke(broadcastMessageToAllClientHubMethodCall, message).catch( () => console.error("hata"));  
@@ -50,4 +51,11 @@
         const message = " bu mesaj diğer clientlara";
         connection.invoke(boardcastMessageOtherClient, message).catch((() => console.error("caller hata")));
     })
+    $("#client-by-id-button").click(function () {
+        const message = "deneme clientlara";
+        var value = $("#client-by-id").val();  // .val() ile input değerini alın
+        connection.invoke("broadcastMessageByIdClient", value, message)
+            .catch(err => console.error("byid hata", err));
+    });
+
 })
